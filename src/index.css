@@ -1,0 +1,29 @@
+/* Hallmark · shape: app screen · genre: modern-minimal · theme: Dose (deal 1/3) · redesign: full
+ * nav: kept · signature: report ledger · states: empty, populated, upload, processing, success, error · dose: quiet, clinical, warm
+ * axes: light/grotesk-sans/chromatic-green · posture: committed · contrast: pass · v2.0.0 */
+@import "tailwindcss";
+@import "./tokens.css";
+@import "./base.css" layer(base);
+
+:root {
+  --font-sans: var(--font-body);
+  --font-mono: var(--font-outlier);
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--color-paper);
+  color: var(--color-ink);
+}
+
+button:not(:disabled) { cursor: pointer; }
+button:disabled { cursor: not-allowed; }
+button:active:not(:disabled) { transform: translateY(1px); }
+.upload-progress { transform-origin: left; transition: transform var(--dur-long) var(--ease-out); }
+
+::selection { background: var(--color-accent-soft); color: var(--color-ink); }
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-track { background: var(--color-paper); }
+::-webkit-scrollbar-thumb { background: var(--color-rule); border-radius: 8px; }
+
+/* Hallmark · pre-emit critique: P4 H4 E4 S3 R4 V4 · weakest: S, a report ledger can read like any records list; its columns foreground DocMed's existing exam dates and out-of-range status. */

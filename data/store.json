@@ -1,0 +1,571 @@
+{
+  "users": [
+    {
+      "id": "usr_patient_demo",
+      "name": "Aaryan Ranjan",
+      "email": "aaryanranjanthebest@gmail.com",
+      "role": "patient",
+      "preferredMode": "patient",
+      "preferredLanguage": "en",
+      "consentGiven": true,
+      "consentTimestamp": "2026-11-11T10:55:08.306Z",
+      "createdAt": "2026-11-11T10:55:08.307Z"
+    },
+    {
+      "id": "usr_dr_demo",
+      "name": "Dr. Shalini Mehta, MD",
+      "email": "dr.shalini@documed.health",
+      "role": "doctor",
+      "doctorCredentials": {
+        "licenseNumber": "MCI-847291",
+        "specialty": "Internal Medicine",
+        "hospital": "Metro Clinical Health Institute",
+        "verified": true
+      },
+      "preferredMode": "doctor",
+      "preferredLanguage": "en",
+      "consentGiven": true,
+      "consentTimestamp": "2026-11-11T10:55:08.307Z",
+      "createdAt": "2026-11-11T10:55:08.307Z"
+    }
+  ],
+  "reports": [
+    {
+      "id": "rep_cbc_baseline_2025",
+      "userId": "usr_patient_demo",
+      "originalFilename": "CBC_Iron_Panel_Baseline_May2025.pdf",
+      "mimeType": "application/pdf",
+      "fileSize": 184520,
+      "reportCategory": "Complete Blood Count (CBC)",
+      "examinationDate": "2025-05-12",
+      "uploadDate": "2025-05-12T10:30:00Z",
+      "laboratoryName": "Metropolis Diagnostic & Clinical Lab",
+      "processingStatus": "ready",
+      "extractedParameters": [
+        {
+          "id": "param_1_1",
+          "reportId": "rep_cbc_baseline_2025",
+          "name": "Hemoglobin (Hb)",
+          "canonicalKey": "hemoglobin",
+          "originalValue": "10.2",
+          "numericValue": 10.2,
+          "unit": "g/dL",
+          "referenceRange": "13.0 - 17.0",
+          "abnormalFlag": "low",
+          "interpretation": "Below normal range, indicates mild anemia",
+          "sourcePage": 1,
+          "extractionConfidence": 0.99
+        },
+        {
+          "id": "param_1_2",
+          "reportId": "rep_cbc_baseline_2025",
+          "name": "Total RBC Count",
+          "canonicalKey": "rbc",
+          "originalValue": "3.8",
+          "numericValue": 3.8,
+          "unit": "million/mcL",
+          "referenceRange": "4.5 - 5.9",
+          "abnormalFlag": "low",
+          "interpretation": "Reduced red blood cell count",
+          "sourcePage": 1,
+          "extractionConfidence": 0.98
+        },
+        {
+          "id": "param_1_3",
+          "reportId": "rep_cbc_baseline_2025",
+          "name": "Packed Cell Volume (PCV/Hematocrit)",
+          "canonicalKey": "pcv",
+          "originalValue": "32.1",
+          "numericValue": 32.1,
+          "unit": "%",
+          "referenceRange": "40.0 - 50.0",
+          "abnormalFlag": "low",
+          "interpretation": "Proportion of red cells in blood is low",
+          "sourcePage": 1,
+          "extractionConfidence": 0.97
+        },
+        {
+          "id": "param_1_4",
+          "reportId": "rep_cbc_baseline_2025",
+          "name": "Mean Corpuscular Volume (MCV)",
+          "canonicalKey": "mcv",
+          "originalValue": "72.4",
+          "numericValue": 72.4,
+          "unit": "fL",
+          "referenceRange": "80.0 - 100.0",
+          "abnormalFlag": "low",
+          "interpretation": "Microcytic red blood cells, common in iron deficiency",
+          "sourcePage": 1,
+          "extractionConfidence": 0.98
+        },
+        {
+          "id": "param_1_5",
+          "reportId": "rep_cbc_baseline_2025",
+          "name": "White Blood Cell Count (WBC)",
+          "canonicalKey": "wbc",
+          "originalValue": "7,400",
+          "numericValue": 7400,
+          "unit": "cells/mcL",
+          "referenceRange": "4,000 - 11,000",
+          "abnormalFlag": "normal",
+          "interpretation": "Immune cell count within normal baseline",
+          "sourcePage": 1,
+          "extractionConfidence": 0.99
+        },
+        {
+          "id": "param_1_6",
+          "reportId": "rep_cbc_baseline_2025",
+          "name": "Platelet Count",
+          "canonicalKey": "platelets",
+          "originalValue": "280,000",
+          "numericValue": 280000,
+          "unit": "cells/mcL",
+          "referenceRange": "150,000 - 450,000",
+          "abnormalFlag": "normal",
+          "interpretation": "Normal clotting cell density",
+          "sourcePage": 1,
+          "extractionConfidence": 0.99
+        },
+        {
+          "id": "param_1_7",
+          "reportId": "rep_cbc_baseline_2025",
+          "name": "Serum Ferritin",
+          "canonicalKey": "ferritin",
+          "originalValue": "14.5",
+          "numericValue": 14.5,
+          "unit": "ng/mL",
+          "referenceRange": "30.0 - 400.0",
+          "abnormalFlag": "low",
+          "interpretation": "Significantly depleted iron storage reserve",
+          "sourcePage": 1,
+          "extractionConfidence": 0.96
+        }
+      ],
+      "patientSummary": "Your report shows signs of mild iron-deficiency anemia. Think of hemoglobin like delivery trucks carrying oxygen to your muscles and brain—currently you have fewer trucks (10.2 instead of 13.0+), which might make you feel tired or fatigued. Your iron stores (ferritin) are also low. Other counts like infection-fighting white blood cells and platelets are healthy.",
+      "doctorSummary": "Microcytic hypochromic anemia (Hb 10.2 g/dL, MCV 72.4 fL, Ferritin 14.5 ng/mL). Normocytic WBC and platelet indices. Consistent with iron deficiency; investigate nutritional intake, GI absorption, or occult blood loss before initiating elemental iron supplementation.",
+      "extractionConfidence": 0.98,
+      "warnings": [],
+      "notes": "Baseline checkup due to general lethargy and mild shortness of breath upon exertion.",
+      "tags": [
+        "Anemia",
+        "Iron Profile",
+        "CBC",
+        "Baseline"
+      ],
+      "isFavorite": true,
+      "pageCount": 1,
+      "createdAt": "2025-05-12T10:30:00Z",
+      "updatedAt": "2025-05-12T10:30:00Z"
+    },
+    {
+      "id": "rep_cbc_followup_2025",
+      "userId": "usr_patient_demo",
+      "originalFilename": "CBC_Iron_Panel_Followup_Nov2025.pdf",
+      "mimeType": "application/pdf",
+      "fileSize": 192300,
+      "reportCategory": "Complete Blood Count (CBC)",
+      "examinationDate": "2025-11-18",
+      "uploadDate": "2025-11-18T14:15:00Z",
+      "laboratoryName": "Metropolis Diagnostic & Clinical Lab",
+      "processingStatus": "ready",
+      "extractedParameters": [
+        {
+          "id": "param_2_1",
+          "reportId": "rep_cbc_followup_2025",
+          "name": "Hemoglobin (Hb)",
+          "canonicalKey": "hemoglobin",
+          "originalValue": "13.4",
+          "numericValue": 13.4,
+          "unit": "g/dL",
+          "referenceRange": "13.0 - 17.0",
+          "abnormalFlag": "normal",
+          "interpretation": "Normal hemoglobin; recovered into healthy clinical range",
+          "sourcePage": 1,
+          "extractionConfidence": 0.99
+        },
+        {
+          "id": "param_2_2",
+          "reportId": "rep_cbc_followup_2025",
+          "name": "Total RBC Count",
+          "canonicalKey": "rbc",
+          "originalValue": "4.7",
+          "numericValue": 4.7,
+          "unit": "million/mcL",
+          "referenceRange": "4.5 - 5.9",
+          "abnormalFlag": "normal",
+          "interpretation": "Red blood cell count has normalized",
+          "sourcePage": 1,
+          "extractionConfidence": 0.98
+        },
+        {
+          "id": "param_2_3",
+          "reportId": "rep_cbc_followup_2025",
+          "name": "Packed Cell Volume (PCV/Hematocrit)",
+          "canonicalKey": "pcv",
+          "originalValue": "41.5",
+          "numericValue": 41.5,
+          "unit": "%",
+          "referenceRange": "40.0 - 50.0",
+          "abnormalFlag": "normal",
+          "interpretation": "Hematocrit volume normalized above 40%",
+          "sourcePage": 1,
+          "extractionConfidence": 0.98
+        },
+        {
+          "id": "param_2_4",
+          "reportId": "rep_cbc_followup_2025",
+          "name": "Mean Corpuscular Volume (MCV)",
+          "canonicalKey": "mcv",
+          "originalValue": "85.2",
+          "numericValue": 85.2,
+          "unit": "fL",
+          "referenceRange": "80.0 - 100.0",
+          "abnormalFlag": "normal",
+          "interpretation": "Red cell size restored to normocytic dimensions",
+          "sourcePage": 1,
+          "extractionConfidence": 0.99
+        },
+        {
+          "id": "param_2_5",
+          "reportId": "rep_cbc_followup_2025",
+          "name": "White Blood Cell Count (WBC)",
+          "canonicalKey": "wbc",
+          "originalValue": "6,900",
+          "numericValue": 6900,
+          "unit": "cells/mcL",
+          "referenceRange": "4,000 - 11,000",
+          "abnormalFlag": "normal",
+          "interpretation": "Normal leukocyte count",
+          "sourcePage": 1,
+          "extractionConfidence": 0.99
+        },
+        {
+          "id": "param_2_6",
+          "reportId": "rep_cbc_followup_2025",
+          "name": "Platelet Count",
+          "canonicalKey": "platelets",
+          "originalValue": "265,000",
+          "numericValue": 265000,
+          "unit": "cells/mcL",
+          "referenceRange": "150,000 - 450,000",
+          "abnormalFlag": "normal",
+          "interpretation": "Normal thrombocyte levels",
+          "sourcePage": 1,
+          "extractionConfidence": 0.99
+        },
+        {
+          "id": "param_2_7",
+          "reportId": "rep_cbc_followup_2025",
+          "name": "Serum Ferritin",
+          "canonicalKey": "ferritin",
+          "originalValue": "58.0",
+          "numericValue": 58,
+          "unit": "ng/mL",
+          "referenceRange": "30.0 - 400.0",
+          "abnormalFlag": "normal",
+          "interpretation": "Iron stores replenished back to safe reserve zone",
+          "sourcePage": 1,
+          "extractionConfidence": 0.97
+        }
+      ],
+      "patientSummary": "Excellent progress! Your hemoglobin has risen from 10.2 to 13.4 g/dL, bringing it fully into the normal healthy range. Your red cell size (MCV) and stored iron (Ferritin at 58.0 ng/mL) have also bounced back nicely, showing that the treatment plan worked effectively.",
+      "doctorSummary": "Resolved microcytic anemia with complete hematological reconstitution: Hb normalized to 13.4 g/dL (+3.2 g/dL), MCV corrected to 85.2 fL, and Ferritin restored to 58.0 ng/mL. Reticulocyte and leukocyte profiles stable. Maintenance dietary counseling recommended.",
+      "extractionConfidence": 0.99,
+      "warnings": [],
+      "notes": "Follow-up 6 months post oral iron therapy & dietary improvements.",
+      "tags": [
+        "CBC",
+        "Follow-up",
+        "Resolved Anemia"
+      ],
+      "isFavorite": true,
+      "pageCount": 1,
+      "createdAt": "2025-11-18T14:15:00Z",
+      "updatedAt": "2025-11-18T14:15:00Z"
+    },
+    {
+      "id": "rep_lipid_hba1c_2026",
+      "userId": "usr_patient_demo",
+      "originalFilename": "Lipid_Panel_HbA1c_Annual_Jan2026.pdf",
+      "mimeType": "application/pdf",
+      "fileSize": 245000,
+      "reportCategory": "Lipid Profile",
+      "examinationDate": "2026-01-20",
+      "uploadDate": "2026-01-20T09:40:00Z",
+      "laboratoryName": "Apollo Diagnostics Health Centre",
+      "processingStatus": "ready",
+      "extractedParameters": [
+        {
+          "id": "param_3_1",
+          "reportId": "rep_lipid_hba1c_2026",
+          "name": "Glycated Hemoglobin (HbA1c)",
+          "canonicalKey": "hba1c",
+          "originalValue": "7.1",
+          "numericValue": 7.1,
+          "unit": "%",
+          "referenceRange": "< 5.7 Normal, 5.7-6.4 Prediabetes, >= 6.5 Diabetes",
+          "abnormalFlag": "high",
+          "interpretation": "Elevated, indicating moderate diabetic range glycemic exposure over past 3 months",
+          "sourcePage": 1,
+          "extractionConfidence": 0.99
+        },
+        {
+          "id": "param_3_2",
+          "reportId": "rep_lipid_hba1c_2026",
+          "name": "Estimated Average Glucose (eAG)",
+          "canonicalKey": "eag",
+          "originalValue": "157",
+          "numericValue": 157,
+          "unit": "mg/dL",
+          "referenceRange": "70 - 120",
+          "abnormalFlag": "high",
+          "interpretation": "Calculated average daily blood sugar level",
+          "sourcePage": 1,
+          "extractionConfidence": 0.98
+        },
+        {
+          "id": "param_3_3",
+          "reportId": "rep_lipid_hba1c_2026",
+          "name": "Fasting Plasma Glucose",
+          "canonicalKey": "fasting_glucose",
+          "originalValue": "128",
+          "numericValue": 128,
+          "unit": "mg/dL",
+          "referenceRange": "70 - 99 Normal",
+          "abnormalFlag": "high",
+          "interpretation": "Impaired fasting glucose",
+          "sourcePage": 1,
+          "extractionConfidence": 0.99
+        },
+        {
+          "id": "param_3_4",
+          "reportId": "rep_lipid_hba1c_2026",
+          "name": "Total Cholesterol",
+          "canonicalKey": "total_cholesterol",
+          "originalValue": "215",
+          "numericValue": 215,
+          "unit": "mg/dL",
+          "referenceRange": "< 200 Desirable",
+          "abnormalFlag": "high",
+          "interpretation": "Borderline high total cholesterol",
+          "sourcePage": 2,
+          "extractionConfidence": 0.99
+        },
+        {
+          "id": "param_3_5",
+          "reportId": "rep_lipid_hba1c_2026",
+          "name": "LDL Cholesterol (Bad)",
+          "canonicalKey": "ldl",
+          "originalValue": "138",
+          "numericValue": 138,
+          "unit": "mg/dL",
+          "referenceRange": "< 100 Optimal, 100-129 Near Optimal, >= 130 Borderline High",
+          "abnormalFlag": "high",
+          "interpretation": "Borderline elevated LDL, warrants lifestyle attention",
+          "sourcePage": 2,
+          "extractionConfidence": 0.98
+        },
+        {
+          "id": "param_3_6",
+          "reportId": "rep_lipid_hba1c_2026",
+          "name": "HDL Cholesterol (Good)",
+          "canonicalKey": "hdl",
+          "originalValue": "48",
+          "numericValue": 48,
+          "unit": "mg/dL",
+          "referenceRange": "> 40 Normal for Men, > 50 for Women",
+          "abnormalFlag": "normal",
+          "interpretation": "Within acceptable protective range",
+          "sourcePage": 2,
+          "extractionConfidence": 0.97
+        },
+        {
+          "id": "param_3_7",
+          "reportId": "rep_lipid_hba1c_2026",
+          "name": "Triglycerides",
+          "canonicalKey": "triglycerides",
+          "originalValue": "185",
+          "numericValue": 185,
+          "unit": "mg/dL",
+          "referenceRange": "< 150 Normal, 150-199 Borderline",
+          "abnormalFlag": "high",
+          "interpretation": "Mild elevation in blood fats",
+          "sourcePage": 2,
+          "extractionConfidence": 0.99
+        },
+        {
+          "id": "param_3_8",
+          "reportId": "rep_lipid_hba1c_2026",
+          "name": "Serum Creatinine",
+          "canonicalKey": "creatinine",
+          "originalValue": "0.9",
+          "numericValue": 0.9,
+          "unit": "mg/dL",
+          "referenceRange": "0.7 - 1.2",
+          "abnormalFlag": "normal",
+          "interpretation": "Normal kidney filtration marker",
+          "sourcePage": 2,
+          "extractionConfidence": 0.98
+        }
+      ],
+      "patientSummary": "This panel checks your 3-month sugar control (HbA1c) and blood fats (cholesterol). Your HbA1c is 7.1%, which indicates your average blood sugar has been slightly elevated (an estimated average glucose of 157 mg/dL). Total cholesterol (215) and LDL \"bad\" cholesterol (138) are slightly above optimal limits. On the positive side, your kidney filtration function (creatinine 0.9) is completely normal.",
+      "doctorSummary": "Cardiometabolic risk assessment: Suboptimal glycemic control (HbA1c 7.1%, FPG 128 mg/dL) consistent with Type 2 Diabetes mellitus under therapy. Combined dyslipidemia with elevated LDL-C (138 mg/dL) and hypertriglyceridemia (185 mg/dL). Renal filtration capacity intact (Creatinine 0.9 mg/dL). Consider intensifying lifestyle modifications or statin/oral hypoglycemic dosage titration in accordance with ASCVD guidelines.",
+      "extractionConfidence": 0.99,
+      "warnings": [],
+      "notes": "Annual metabolic checkup; patient fast was 10 hours prior to venipuncture.",
+      "tags": [
+        "HbA1c",
+        "Lipid Profile",
+        "Diabetes",
+        "Cardiometabolic"
+      ],
+      "isFavorite": false,
+      "pageCount": 2,
+      "createdAt": "2026-01-20T09:40:00Z",
+      "updatedAt": "2026-01-20T09:40:00Z"
+    }
+  ],
+  "conversations": [
+    {
+      "id": "conv_initial_guide",
+      "userId": "usr_patient_demo",
+      "title": "Understanding My Hemoglobin & Iron Levels",
+      "selectedReportIds": [
+        "rep_cbc_baseline_2025",
+        "rep_cbc_followup_2025"
+      ],
+      "interactionMode": "patient",
+      "preferredLanguage": "en",
+      "messages": [
+        {
+          "id": "msg_1",
+          "conversationId": "conv_initial_guide",
+          "sender": "user",
+          "content": "Why was my hemoglobin low in May, and has it improved?",
+          "referencedReportIds": [
+            "rep_cbc_baseline_2025",
+            "rep_cbc_followup_2025"
+          ],
+          "mode": "patient",
+          "language": "en",
+          "createdAt": "2025-11-19T09:00:00Z"
+        },
+        {
+          "id": "msg_2",
+          "conversationId": "conv_initial_guide",
+          "sender": "ai",
+          "content": "### Summary of Your Hemoglobin Journey\n\nIn your **May 12, 2025 report**, your Hemoglobin was **10.2 g/dL**, which was below the normal laboratory range of **13.0 – 17.0 g/dL**. Your red blood cell size (MCV: 72.4 fL) and iron reserves (Ferritin: 14.5 ng/mL) were also depleted. \n\n*Think of Hemoglobin as the oxygen delivery vans in your bloodstream:* having low levels means your muscles and organs receive less oxygen, which commonly explains fatigue or breathlessness.\n\n### Follow-up Comparison (November 18, 2025)\nIn your follow-up test 6 months later:\n- **Hemoglobin increased to 13.4 g/dL** (an improvement of **+3.2 g/dL**, or **+31.4%**), bringing you right back into the healthy normal range!\n- **MCV rose to 85.2 fL** (normal cell volume).\n- **Ferritin climbed to 58.0 ng/mL** (healthy iron storage).\n\n### Suggested Questions for Your Doctor:\n1. Should I continue with a lower maintenance dose of iron, or stop supplementation and rely on diet?\n2. When would you like to schedule my next routine check?\n3. Are there any dietary habits that will prevent my iron from dropping again?",
+          "referencedReportIds": [
+            "rep_cbc_baseline_2025",
+            "rep_cbc_followup_2025"
+          ],
+          "citations": [
+            {
+              "reportId": "rep_cbc_baseline_2025",
+              "reportName": "CBC_Iron_Panel_Baseline_May2025.pdf",
+              "pageNumber": 1,
+              "parameter": "Hemoglobin",
+              "excerpt": "Hemoglobin 10.2 g/dL (Ref: 13.0 - 17.0 g/dL) [LOW]",
+              "isExtractedFact": true
+            },
+            {
+              "reportId": "rep_cbc_followup_2025",
+              "reportName": "CBC_Iron_Panel_Followup_Nov2025.pdf",
+              "pageNumber": 1,
+              "parameter": "Hemoglobin",
+              "excerpt": "Hemoglobin 13.4 g/dL (Ref: 13.0 - 17.0 g/dL) [NORMAL]",
+              "isExtractedFact": true
+            }
+          ],
+          "mode": "patient",
+          "language": "en",
+          "createdAt": "2025-11-19T09:00:05Z"
+        },
+        {
+          "id": "msg_1794394626312_ue7yvc",
+          "conversationId": "conv_initial_guide",
+          "sender": "user",
+          "content": "what food contains vitamin d",
+          "referencedReportIds": [
+            "rep_cbc_baseline_2025",
+            "rep_cbc_followup_2025"
+          ],
+          "mode": "patient",
+          "language": "en",
+          "createdAt": "2026-11-11T10:57:06.312Z"
+        },
+        {
+          "id": "msg_1794394629388_a86z8i",
+          "conversationId": "conv_initial_guide",
+          "sender": "ai",
+          "content": "I analyzed the uploaded documents. Could you please clarify your question or specify which laboratory parameters you would like to explore?",
+          "referencedReportIds": [
+            "rep_cbc_baseline_2025",
+            "rep_cbc_followup_2025"
+          ],
+          "citations": [],
+          "mode": "patient",
+          "language": "en",
+          "createdAt": "2026-11-11T10:57:09.388Z"
+        },
+        {
+          "id": "msg_1794394633721_iok3b9",
+          "conversationId": "conv_initial_guide",
+          "sender": "user",
+          "content": "Explain my report summary",
+          "referencedReportIds": [
+            "rep_cbc_baseline_2025",
+            "rep_cbc_followup_2025"
+          ],
+          "mode": "patient",
+          "language": "en",
+          "createdAt": "2026-11-11T10:57:13.721Z"
+        },
+        {
+          "id": "msg_1794394633723_inccz8",
+          "conversationId": "conv_initial_guide",
+          "sender": "ai",
+          "content": "I analyzed the uploaded documents. Could you please clarify your question or specify which laboratory parameters you would like to explore?",
+          "referencedReportIds": [
+            "rep_cbc_baseline_2025",
+            "rep_cbc_followup_2025"
+          ],
+          "citations": [],
+          "mode": "patient",
+          "language": "en",
+          "createdAt": "2026-11-11T10:57:13.723Z"
+        },
+        {
+          "id": "msg_1794394635707_qx1c7v",
+          "conversationId": "conv_initial_guide",
+          "sender": "user",
+          "content": "Are there any abnormal values?",
+          "referencedReportIds": [
+            "rep_cbc_baseline_2025",
+            "rep_cbc_followup_2025"
+          ],
+          "mode": "patient",
+          "language": "en",
+          "createdAt": "2026-11-11T10:57:15.707Z"
+        },
+        {
+          "id": "msg_1794394635711_0e34fo",
+          "conversationId": "conv_initial_guide",
+          "sender": "ai",
+          "content": "I analyzed the uploaded documents. Could you please clarify your question or specify which laboratory parameters you would like to explore?",
+          "referencedReportIds": [
+            "rep_cbc_baseline_2025",
+            "rep_cbc_followup_2025"
+          ],
+          "citations": [],
+          "mode": "patient",
+          "language": "en",
+          "createdAt": "2026-11-11T10:57:15.711Z"
+        }
+      ],
+      "createdAt": "2025-11-19T09:00:00Z",
+      "updatedAt": "2026-11-11T10:57:15.711Z"
+    }
+  ],
+  "comparisons": []
+}

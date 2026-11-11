@@ -1,0 +1,16 @@
+[
+ {
+  "mode": "redesign",
+  "depth": "full",
+  "scope": "app",
+  "theme": "Dose",
+  "prompt": "DocMed dashboard for patients and clinicians to upload, understand, and compare medical laboratory reports",
+  "axes": "light/grotesk-sans/chromatic-green",
+  "screen": "Dashboard with a report ledger and upload states",
+  "signature": "the recent medical report ledger",
+  "preserved": "existing copy, routes, forms, handlers, and report data flow",
+  "introduced": "Dose tokens, warm paper and green palette, updated typography and app surfaces",
+  "validation": "build passed; kept handlers 101/101; automated headless render unavailable",
+  "date": "2026-11-11"
+ }
+]

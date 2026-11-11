@@ -1,0 +1,48 @@
+{
+  "project": "DocMed",
+  "scope": "app",
+  "genre": "modern-minimal",
+  "signals": {
+    "design_system": "No root design.md or brand specification found; prior UI used zinc/teal Tailwind colors, Plus Jakarta Sans, and JetBrains Mono.",
+    "framework": "React + Vite + Tailwind CSS v4; app routes and shell in src/App.tsx.",
+    "product": "Running local app at http://localhost:3000; dashboard is default view.",
+    "material": "Existing report rows, dates, labs, status labels, discussions, comparison copy, upload fields, and safety copy from src/components/DashboardView.tsx and UploadModal.tsx.",
+    "audience": "Patients and clinicians reviewing laboratory reports.",
+    "action": "Upload a medical report, then explore extracted values and compare reports.",
+    "tone": "Calm, clear, clinical editorial; inferred from DocMed and the user-approved inference."
+  },
+  "preserved": [
+    "all visible medical copy and claims except replacing the buzzword 'unlock' with 'view'",
+    "route/navigation handlers",
+    "upload handlers and fields",
+    "report and conversation actions",
+    "current report table and safety notice"
+  ],
+  "introduced": [
+    "Hallmark Dose tokens and typography",
+    "warm paper and pharmacy-green palette",
+    "restyled dashboard, app chrome, and upload states"
+  ],
+  "not_added": [
+    "new medical claims",
+    "new metrics",
+    "new product behavior",
+    "third-party imagery"
+  ],
+  "files": [
+    "src/components/DashboardView.tsx",
+    "src/components/UploadModal.tsx",
+    "src/components/Header.tsx",
+    "src/components/Sidebar.tsx",
+    "src/App.tsx",
+    "src/index.css",
+    "src/tokens.css",
+    "src/base.css",
+    "index.html"
+  ],
+  "validation": {
+    "baseline": "static sloplint recorded in .hallmark/before.json",
+    "kept": "101/101 handlers",
+    "render": "manual local browser inspection; automated sloplint render could not launch headless Chrome"
+  }
+}
